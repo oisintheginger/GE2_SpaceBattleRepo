@@ -80,7 +80,7 @@ public class pilotMovementScript : MonoBehaviour
         
         float rampSpeed = ((dist / slowingDistance)) * maxSpeed ;
         float Clamped = Mathf.Min(rampSpeed, maxSpeed);
-        Debug.Log(speed);
+        //Debug.Log(speed);
         
         Vector3 desiredVelocity = Clamped * (toTarget.normalized);
         
