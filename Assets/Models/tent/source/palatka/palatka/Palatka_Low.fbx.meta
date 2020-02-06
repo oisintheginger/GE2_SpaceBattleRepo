@@ -3,7 +3,37 @@ guid: 3a4881282f8aec1449669ae305fe6e0a
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: balki.003
+    second: {fileID: 2100000, guid: 4cbd14c8fefdc7940af7f46597f7074c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: krisha.003
+    second: {fileID: 2100000, guid: 82af77ee728590a4ba563250fb3dc1e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: osnova.003
+    second: {fileID: 2100000, guid: 18ab4f173f76ff44eabc6107ce5948c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prost.002
+    second: {fileID: 2100000, guid: ec7ceccaf09e4474c8c51f2c160681eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shtory.003
+    second: {fileID: 2100000, guid: 92b1b011d7746a443af3315a068a0ac0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: virezka.003
+    second: {fileID: 2100000, guid: 42fff3fbdbc60ff4ebf7fb696e5ab825, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -34,7 +64,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 1.25
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -80,7 +110,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.012499999
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
