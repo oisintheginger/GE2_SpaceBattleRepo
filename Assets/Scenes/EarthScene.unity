@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   generationDistance: 800
-  gap: 6
+  gap: 10
   obstacleObjects:
   - {fileID: 2043026265}
   viablePoints: []

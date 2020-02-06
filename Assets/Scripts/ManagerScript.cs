@@ -19,25 +19,25 @@ public class ManagerScript : MonoBehaviour
                 Vector3 newPoint2 = new Vector3(-x, 0, z);
                 Vector3 newPoint3 = new Vector3(x, 0, -z);
                 Vector3 newPoint4 = new Vector3(-x, 0, -z);
-                viablePoints.Add(newPoint1);
-                viablePoints.Add(newPoint2);
-                viablePoints.Add(newPoint3);
-                viablePoints.Add(newPoint4);
+                CheckPositions(newPoint1);
+                CheckPositions(newPoint2);
+                CheckPositions(newPoint3);
+                CheckPositions(newPoint4);
+
             }
         }
     }
 
-    List<Vector3> CheckPositions(List<Vector3> checkingPoints)
+    void CheckPositions(Vector3 checkingPoints)
     {
-        List<Vector3> checkedPositions = new List<Vector3>();
         foreach(GameObject obstacle in obstacleObjects)
         {
-            foreach(Vector3 positions in checkingPoints)
+            if(Vector3.Distance(new Vector3(obstacle.transform.position.x, 0, obstacle.transform.position.z), checkingPoints)> obstacle.transform.localScale.x)
             {
-                //if (positions.x-)
+                viablePoints.Add(checkingPoints);
             }
         }
-        return checkedPositions;
+        
     }
     private void OnDrawGizmos()
     {
