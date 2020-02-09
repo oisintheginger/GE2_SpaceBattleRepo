@@ -25,12 +25,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335804492352396098}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.13674517, y: -0.024159927, z: -0.17229825, w: 0.9752079}
+  m_LocalPosition: {x: -1.12, y: -0.932, z: -4.841}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 8895742654833621598}
-  m_RootOrder: 7
+  m_Father: {fileID: 4321271086567394428}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2160744911984474410
 MeshFilter:
@@ -474,6 +474,37 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &2724215546564565726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4321271086567394428}
+  m_Layer: 0
+  m_Name: PropellerParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4321271086567394428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2724215546564565726}
+  m_LocalRotation: {x: -0.13674407, y: -0.024159731, z: -0.17229827, w: 0.97520804}
+  m_LocalPosition: {x: 0.67159843, y: 2.5575225, z: 4.3914113}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2886006409047268701}
+  m_Father: {fileID: 8895742654833621598}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: -15.964001, y: 0, z: 0}
 --- !u!1 &3674818082136867229
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,8 +767,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4827013719088908198}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8895742654833621598}
@@ -1115,9 +1146,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8895742654833621598}
+  - component: {fileID: 2780127557482974767}
+  - component: {fileID: 1824002016221853944}
+  - component: {fileID: 489872049905172643}
   m_Layer: 0
   m_Name: Spitfire
-  m_TagString: Untagged
+  m_TagString: Plane
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1140,7 +1174,7 @@ Transform:
   - {fileID: 6762377770332243580}
   - {fileID: 4613891482860579156}
   - {fileID: 6658417593589680017}
-  - {fileID: 2886006409047268701}
+  - {fileID: 4321271086567394428}
   - {fileID: 4893533986579733563}
   - {fileID: 1613553226505666824}
   - {fileID: 2228457238959078343}
@@ -1150,3 +1184,71 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2780127557482974767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5561768556903991373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad28cf3b34c1f6c498bfbadbb0ff0918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chosen: 0
+  RunWayPosition:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  planeEnterPoint: {fileID: 0}
+--- !u!114 &1824002016221853944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5561768556903991373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50c55276f49a56b4a8378c02f379e1cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  force: {x: 0, y: 0, z: 0}
+  mass: 1
+  maxSpeed: 0
+  maxForce: 0
+  speed: 0
+  slowingDistance: 0
+  brakeSpeed: 0
+  Banking: 3
+  bankSpeed: 3
+  seekEnabled: 0
+  arriveEnabled: 0
+  isWandering: 0
+  isPatrolling: 0
+  isFleeing: 0
+  target: {fileID: 0}
+  currentPoint: 0
+  approachDistance: 0
+--- !u!95 &489872049905172643
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5561768556903991373}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e7fb23dee208696418c4b5897f9746b8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

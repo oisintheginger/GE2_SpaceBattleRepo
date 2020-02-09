@@ -519,8 +519,8 @@ GameObject:
   - component: {fileID: 178825679265843735}
   - component: {fileID: 252857265770500389}
   m_Layer: 0
-  m_Name: swat
-  m_TagString: Untagged
+  m_Name: Pilot
+  m_TagString: Pilot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -615,7 +615,15 @@ MonoBehaviour:
   bankSpeed: 0.81
   seekEnabled: 0
   arriveEnabled: 1
+  isWandering: 0
+  isPatrolling: 0
+  isFleeing: 0
   target: {fileID: 0}
+  patrolPoints: []
+  patrolRange: 0
+  regenerateTime: 60
+  currentPoint: 0
+  approachDistance: 0
 --- !u!1 &1846660027645349024
 GameObject:
   m_ObjectHideFlags: 0

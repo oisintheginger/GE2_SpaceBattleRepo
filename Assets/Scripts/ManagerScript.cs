@@ -4,38 +4,54 @@ using UnityEngine;
 
 public class ManagerScript : MonoBehaviour
 {
-    [SerializeField] int generationDistance, gap, avoidanceVariable=1;
-    public List<GameObject> obstacleObjects;
+    [SerializeField] int generationDistance, gap;
+    [SerializeField] float avoidanceVariable = 1f;
+    public List<GameObject> camerasList;
+    public List<GameObject> obstacleObjects, pilotsList, planesList;
+    public List<Transform> shotPoints;
     public List<Vector3> viablePoints, nonViablePoints;
     Dictionary<string, Vector3> pointsDictionary;
 
+    public bool AlertPilots = false;
     private void Awake()
     {
-        obstacleObjects.Clear();
+        findPlanes();
+        foreach(GameObject Pilot in GameObject.FindGameObjectsWithTag("Pilot"))
+        {
+            pilotsList.Add(Pilot);
+        }
         foreach(GameObject obstacle in GameObject.FindGameObjectsWithTag("obstacle"))
         {
             obstacleObjects.Add(obstacle);
         }
+        Vector3 thisT = this.gameObject.transform.position;
         for (int x = 0; x<generationDistance; x+=gap)
         {
             for(int z =0; z<generationDistance; z+=gap)
             {
-                Vector3 newPoint1 = new Vector3(x,0,z);
-                Vector3 newPoint2 = new Vector3(-x, 0, z);
-                Vector3 newPoint3 = new Vector3(x, 0, -z);
-                Vector3 newPoint4 = new Vector3(-x, 0, -z);
+                Vector3 newPoint1 = new Vector3(x+thisT.x,0,z+thisT.z);
                 viablePoints.Add(newPoint1);
-                viablePoints.Add(newPoint2);
-                viablePoints.Add(newPoint3);
-                viablePoints.Add(newPoint4);
                 CheckPositions(newPoint1);
-                CheckPositions(newPoint2);
-                CheckPositions(newPoint3);
-                CheckPositions(newPoint4);
 
             }
         }
-        
+        AssignPlanes();
+    }
+
+    private void Update()
+    {
+        if(AlertPilots == true)
+        {
+            foreach(GameObject pilot in pilotsList)
+            {
+                var pScript = pilot.GetComponent<pilotMovementScript>();
+                pScript.target = pScript.selectedPlane.GetComponent<SpitfireScript>().planeEnterPoint;
+                pScript.isWandering = false;
+                pScript.isPatrolling = false;
+                pScript.arriveEnabled = true;
+
+            }
+        }
     }
 
     void CheckPositions(Vector3 checkingPoints)
@@ -44,22 +60,41 @@ public class ManagerScript : MonoBehaviour
         {
             if(Vector3.Distance(new Vector3(obstacle.transform.position.x, 0, obstacle.transform.position.z), checkingPoints)< obstacle.transform.localScale.x * avoidanceVariable)
             {
-                Debug.Log("Distance Checked");
                 viablePoints.Remove(checkingPoints);
                 nonViablePoints.Add(checkingPoints);
-            }
-            else
-            {
-                Debug.Log(checkingPoints + "This was reject");
             }
         }
         
     }
+
+    void findPlanes()
+    {
+        foreach(GameObject plane in GameObject.FindGameObjectsWithTag("Plane"))
+        {
+            planesList.Add(plane);
+        }
+    }
+
+    void AssignPlanes()
+    {
+        foreach(GameObject pilot in pilotsList)
+        {
+            pilot.GetComponent<pilotMovementScript>().selectedPlane = planesList[pilotsList.IndexOf(pilot)];
+            planesList[pilotsList.IndexOf(pilot)].GetComponent<SpitfireScript>().chosen = true;
+        }
+    }
+
+    
+
     private void OnDrawGizmos()
     {
         foreach(Vector3 point in nonViablePoints)
         {
-            Gizmos.DrawWireSphere(point, 1f);
+            //Gizmos.DrawWireSphere(point, 1f);
+        }
+        foreach(Vector3 point in viablePoints)
+        {
+            //Gizmos.DrawWireSphere(point, 1f);
         }
     }
 }
