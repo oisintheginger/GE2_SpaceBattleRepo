@@ -146,7 +146,6 @@ public class pilotMovementScript : MonoBehaviour
     {
         if(Mathf.Abs(Vector3.Distance(this.transform.position, target.transform.position))<approachDistance)
         {
-            Debug.Log("Got Here");
             if (patrolPoints.Capacity - 1 <= currentPoint)
             {
                 currentPoint=0;

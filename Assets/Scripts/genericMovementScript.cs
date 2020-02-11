@@ -86,6 +86,13 @@ public class genericMovementScript : MonoBehaviour
         return desiredVelocity - velocity;
     }
 
+    Vector3 Flee(GameObject target)
+    {
+        Vector3 toTarget = -target.transform.position + this.gameObject.transform.position;
+        Vector3 desiredVelocity = toTarget.normalized * maxSpeed;
+        return desiredVelocity - velocity;
+    }
+
     Vector3 Arrive(GameObject target)
     {
         Vector3 correctedTarget = new Vector3(target.transform.position.x,
