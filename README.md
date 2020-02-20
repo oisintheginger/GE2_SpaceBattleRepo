@@ -12,6 +12,8 @@ I am basing my project on this video clip from YouTube, and will be using it as 
 
 In order to recreate this battle I have broken it up into three separate scenes; 'The Alert', 'Approach', and 'Engagement'.
 'The Alert' has so far been completed with the scene progressing from stage to stage, utilising timers and events to activate cameras and camera movements.
+It involves the pilots being alerted by the commander of the Dalek threat. The pilots then run to their planes and takeoff. Camera shots are activated by using timers
+and by relying on AI reaching specific points at specific times.
 
 'Approach' will be a simple scene starting off with the Doctor and the Daleks inside the ship moving around(Perhaps audio clips can be played).
 Then I will switch to a camera shot of the space planes doing an offset pursuit around the globe earth. After demonstrating some cool shots, alternating from camera
