@@ -21,4 +21,19 @@ to camera.
 
 'Engagement' will be a very long scene, I hope to have a central Dalek ship in the middle of the scene and have many space planes battling around it, approaching 'targets'
 to attack. I will switch from shot to shot, recreating some of the scenes from the video, i.e. the Dalek turret destroying a plane. The scene will end when the space
-planes manage to damage the Dalek ship enough, which will cause the main Dalek gun to explode, and the scene will end.
+planes manage to damage the Dalek ship enough,
+which will cause the main Dalek gun to explode, and the scene will end.
+
+Sources: 
+Nome of the models in the project are of my own creation;
+Sources:
+*P-51 Mustang, by PB-design, Free3D.com
+*Dalek, SoMeme starwars, Sketchfab.com
+*Dalek Ship, Megan Grant, Sketchfab.com
+*Swat, Mixamo.com
+*Alex, Mixamo.com
+*willys jeep, Johannes Nienbar, Sketchfab
+*Military Tent, Venikamen, sketachfab.com
+*Wooden Crates, Animation Arts Creative GmBH, Unity Asset Store
+*Fantasy Lamdscape, Pxltiger, Unity Asset Store
+Nature Ground Weed Texture, Free Stock Textures, freestocktexture.com
