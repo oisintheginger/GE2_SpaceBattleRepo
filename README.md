@@ -25,8 +25,10 @@ planes manage to damage the Dalek ship enough,
 which will cause the main Dalek gun to explode, and the scene will end.
 
 Sources: 
-Nome of the models in the project are of my own creation;
+None of the models in the project are of my own creation;
+
 Sources:
+*Planet Earth Free, headwards, Unity Asset Store 
 *P-51 Mustang, by PB-design, Free3D.com
 *Dalek, SoMeme starwars, Sketchfab.com
 *Dalek Ship, Megan Grant, Sketchfab.com
