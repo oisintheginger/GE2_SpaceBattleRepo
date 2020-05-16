@@ -7,7 +7,7 @@ public class ShipAI : MonoBehaviour
     public LayerMask lm;
     public GameObject dalekship;
     public Collider[] gms;
-   [SerializeField] float time;
+    [SerializeField] float time;
     public float reloadTime;
     public  GameObject projectile;
     private void Start()

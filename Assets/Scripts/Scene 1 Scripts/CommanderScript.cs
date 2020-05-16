@@ -98,7 +98,7 @@ public class CommanderScript : MonoBehaviour
                 break;
 
             case 8:
-                SceneManager.LoadScene("Model Scene");
+                SceneManager.LoadScene(1);
                 break;
         }
     }
