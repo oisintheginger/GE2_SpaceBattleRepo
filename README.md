@@ -1,6 +1,10 @@
 # GE2_SpaceBattleRepo
  Project Repo for Game Engines 2. Project goal is to recreate a scifi battle in unity using autonomous agents, pathfinding etc.
 
+## Demo Video ##
+
+[![](http://img.youtube.com/vi/zs_Amdz-2MU/0.jpg)](http://www.youtube.com/watch?v=zs_Amdz-2MU "")
+
 ## Project Concept ##
 
 I am going to recreate the space battle scene from the Doctor Who episodes 'Into the Storm' and 'Victory of the Daleks'. 
