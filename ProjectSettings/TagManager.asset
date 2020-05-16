@@ -7,6 +7,8 @@ TagManager:
   - obstacle
   - Pilot
   - Plane
+  - Fighter
+  - Dalek
   layers:
   - Default
   - TransparentFX
@@ -16,8 +18,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - FighterLayer
+  - DalekLayer
   - 
   - 
   - 
