@@ -32,15 +32,15 @@ Sources:
 None of the models in the project are of my own creation;
 
 Sources:
-*Real star Skyox lite,Geoff Dallimore, Unity Asset Store
-*Planet Earth Free, headwards, Unity Asset Store 
-*P-51 Mustang, by PB-design, Free3D.com
-*Dalek, SoMeme starwars, Sketchfab.com
-*Dalek Ship, Megan Grant, Sketchfab.com
-*Swat, Mixamo.com
-*Alex, Mixamo.com
-*willys jeep, Johannes Nienbar, Sketchfab
-*Military Tent, Venikamen, sketachfab.com
-*Wooden Crates, Animation Arts Creative GmBH, Unity Asset Store
-*Fantasy Lamdscape, Pxltiger, Unity Asset Store
-Nature Ground Weed Texture, Free Stock Textures, freestocktexture.com
+* Real star Skyox lite,Geoff Dallimore, Unity Asset Store
+* Planet Earth Free, headwards, Unity Asset Store 
+* P-51 Mustang, by PB-design, Free3D.com
+* Dalek, SoMeme starwars, Sketchfab.com
+* Dalek Ship, Megan Grant, Sketchfab.com
+* Swat, Mixamo.com
+* Alex, Mixamo.com
+* willys jeep, Johannes Nienbar, Sketchfab
+* Military Tent, Venikamen, sketachfab.com
+* Wooden Crates, Animation Arts Creative GmBH, Unity Asset Store
+* Fantasy Lamdscape, Pxltiger, Unity Asset Store
+* Nature Ground Weed Texture, Free Stock Textures, freestocktexture.com
