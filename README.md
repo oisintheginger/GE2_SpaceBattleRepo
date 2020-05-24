@@ -5,6 +5,21 @@
 
 [![](http://img.youtube.com/vi/zs_Amdz-2MU/0.jpg)](http://www.youtube.com/watch?v=zs_Amdz-2MU "")
 
+## Implementation ##
+I only managed to get two of the three scenes, which are the 'Alert' and the 'Engagement'. These are the first and last scenes of the initial storyboard. 
+
+### Alert ###
+Alert starts off with soldiers randomly wandering a scene. To wander, I implemented a grid system wich generates a grid of nodes, and depending on whether they are inside an 'obstacle object' it will mark them as traversable or non-traversable. I used a non-refactored version of the code we did in class for all the movement, and used a switch statement and timer to trigger different events. All camera changes are timed and or triggered by an event, i.e hitting a trigger to do the over wing shot. Animations were gathered from mixamo and none of the models were of my own design except the dalek turret, which I built using probuilder. This portion of the assignment was completed around February, before we covered the refactored steering behaviours in class.
+
+### Engagement ###
+I started this with scene around the 20th of April, gathering resources. I also looked on the class github for how to refactor the code for steering behaviours, and I pretty much implemented them as they were since they were all I needed for the assignment. I spent some time tinkering with the obstacle avoidance behaviour, as I could not get it to work as I wanted it to. In the end the bulk of my work for this section was just setting up the scene to flow in a certain way. I had cameras trigger through trigger colliders and timing. The Dalek ship turrets were also implemented just using a trigger sphere. When a fighter plane entered the sphere, the plane was added to a list of targets for the turret. The turret always targets the first index of that list. When a plane leaves the sphere, it is removed from the list. 
+
+## What I am most proud of: ##
+I'm proud that I managed to finish the assignment, after the big gap in work and the situation with the lockdown, I found it hard to find the will to finish this assignment. I had just finished another assignment which I got a great grade for, and starting back on this project with no momentum was pretty tough. Other than that, in terms of code, I'm proud that I now have a stronger sense of abstract classes and inheritance, as I was able to understand the code from the class repo. Also that I managed to get the grid system working for myself, even if it isn't the optimal solution to the problem.
+
+## Instructions ## 
+Just run from the Earth scene, or make a build, and it should run through by itself. The project is automated, so it requires no user input.
+
 ## Project Concept ##
 
 I am going to recreate the space battle scene from the Doctor Who episodes 'Into the Storm' and 'Victory of the Daleks'. 
@@ -12,7 +27,7 @@ I am basing my project on this video clip from YouTube, and will be using it as 
 
 [![](http://img.youtube.com/vi/HirwnpeugNM/0.jpg)](http://www.youtube.com/watch?v=HirwnpeugNM "")
 
-## Breakdown/ Storyboard ##
+## Initial Breakdown/ Storyboard ##
 
 In order to recreate this battle I have broken it up into three separate scenes; 'The Alert', 'Approach', and 'Engagement'.
 'The Alert' has so far been completed with the scene progressing from stage to stage, utilising timers and events to activate cameras and camera movements.
